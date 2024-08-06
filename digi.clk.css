@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmgzkGif4njoKG1MSY5sb8XHiq02kgB1DMew&s")no-repeat;
+    background-size: cover;
+}
+
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1), 0px 10px 20px rgba(0,0,0,0.7);
+    height: 26vh;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+
+.clock span{
+    position: relative;
+    top: -13%;
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:400px){
+    .clock{
+        max-width: 260px;
+        padding: 5px;
+
+    }
+    .clock h1{
+        font-size: 1.9rem;
+    }
+    
+
+@media screen and (min-width: 280px) and (max-width:400px){
+    .clock{
+        max-width: 260px;
+        padding: 5px;
+
+    }
+    .clock h1{
+        font-size: 2.4rem;
+    }
+    
+}
+}
